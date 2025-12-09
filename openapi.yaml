@@ -1,0 +1,79 @@
+openapi: 3.0.4
+info:
+  title: BIN Lookup
+  description: BIN Lookup is a simple tool for looking up BIN number information. It returns information such as the bank, card type, and more based on the BIN number provided.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/binlookup:
+    get:
+      summary: Lookup Credit Card Information
+      description: BIN Lookup is a simple tool for looking up BIN number information. It returns information such as the bank, card type, and more based on the BIN number provided.
+      operationId: binlookup
+      parameters:
+      - name: bin
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The first six digits of the credit card number (BIN)
+        example: '448590'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  bin: '448590'
+                  brand: VISA
+                  type: CREDIT
+                  category: PURCHASING
+                  issuer:
+                    name: JPMORGAN CHASE BANK, N.A.
+                    country: United States
+                    phone: 1-800-432-3117
+                    website: www.chase.com
+                  location:
+                    country: United States
+                    latitude: '37.0902'
+                    longitude: '-95.7129'
+                    alpha2: US
+                    alpha3: USA
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
